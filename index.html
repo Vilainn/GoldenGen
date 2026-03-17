@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoldenGen Technologies</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Font Awesome For icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--Loading overlay-->
+    <div class="loading-overlay" id="loadingOverlay">
+      <div class="loader-content">
+        <h2 class="loader-logo">
+          <span class="loader-logo-golden">Golden</span>Gen Technologies
+        </h2>
+        <div class="loader-spinner"></div>
+      </div>
+    </div>
+
+    <!--Navbar-->
+    <nav class="main-nav" aria-label="main-navigation">
+      <div class="nav-container">
+        <!--Nav-brand-->
+        <a href="index.html" class="nav-brand">
+          <span class="nav-brand-golden">Golden</span>Gen Technologies
+        </a>
+
+        <!--Navigation links-->
+        <div class="nav-links" id="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="products.html" class="nav-link">Products</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+
+        <!--Right side icons-->
+        <div class="nav-icons">
+          <!--Search Bar-->
+          <div class="nav-search" id="navSearch">
+            <input
+              type="text"
+              placeholder="Search products..."
+              class="search-input"
+              id="searchInput"
+            />
+            <button
+              class="search-btn"
+              id="searchBtn"
+              aria-label="Search products"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <!--User Account-->
+          <a href="#" class="account-icon">
+            <i class="fa-solid fa-user"></i>
+          </a>
+
+          <!--Cart-->
+          <a href="#" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+          </a>
+
+          <!--Dark Mode-->
+          <button
+            class="dark-mode-toggle"
+            id="darkModeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <!--Hamburger-->
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
