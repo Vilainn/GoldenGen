@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GoldenGen Technologies</title>
+    <title>GoldenGen Technologies | Laptops & Computer Accessories</title>
 
     <link rel="stylesheet" href="css/styles.css" />
     <!--Google Fonts-->
@@ -19,7 +19,7 @@
     />
   </head>
   <body>
-    <!--Loading overlay-->
+    <!--Loading overlay
     <div class="loading-overlay" id="loadingOverlay">
       <div class="loader-content">
         <h2 class="loader-logo">
@@ -28,13 +28,37 @@
         <div class="loader-spinner"></div>
       </div>
     </div>
+  -->
+
+    <!--Announcement Bar-->
+    <div class="announcement-bar">
+      <div class="announcement-wrapper">
+        <p class="announcement-text" id="announcementText">
+          🇰🇪 Delivery countrywide - We deliver across Kenya
+        </p>
+        <div class="announcement-progress"></div>
+      </div>
+    </div>
 
     <!--Navbar-->
     <nav class="main-nav" aria-label="main-navigation">
       <div class="nav-container">
-        <!--Nav-brand-->
+        <!--Nav brand-->
         <a href="index.html" class="nav-brand">
-          <span class="nav-brand-golden">Golden</span>Gen Technologies
+          <!-- Logo Icon -->
+          <div class="logo-icon">
+            <div class="logo-diamond">
+              <span class="logo-letters">GG</span>
+            </div>
+          </div>
+
+          <!-- Logo Text -->
+          <div class="logo-text">
+            <span class="logo-name">
+              <span class="logo-golden">Golden</span>Gen
+            </span>
+            <span class="logo-tagline">Technologies</span>
+          </div>
         </a>
 
         <!--Navigation links-->
@@ -72,7 +96,7 @@
           <!--Cart-->
           <a href="#" class="cart-icon">
             <i class="fa-solid fa-cart-shopping"></i>
-            <span class="cart-count">0</span>
+            <span class="cart-count" id="cartCount">0</span>
           </a>
 
           <!--Dark Mode-->
@@ -97,6 +121,1030 @@
         </div>
       </div>
     </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <!-- Background decorative circles -->
+      <div class="hero-bg-circle hero-circle-1"></div>
+      <div class="hero-bg-circle hero-circle-2"></div>
+      <div class="hero-bg-circle hero-circle-3"></div>
+
+      <div class="hero-container">
+        <!-- Left Content -->
+        <div class="hero-content">
+          <!-- Greeting tag -->
+          <div class="hero-tag">
+            <span class="hero-tag-dot"></span>
+            Welcome to GoldenGen Technologies
+          </div>
+
+          <!-- Main heading -->
+          <h1 class="hero-heading">
+            Premium Laptops &<br />
+            <span class="hero-heading-highlight">Computer Accessories</span>
+          </h1>
+
+          <!-- Typewriter tagline -->
+          <p class="hero-tagline">
+            We sell
+            <span class="typewriter" id="typewriter"></span>
+          </p>
+
+          <!-- Description -->
+          <p class="hero-description">
+            Discover the latest laptops, accessories and tech gear. Quality
+            products, competitive prices and delivery countrywide across Kenya.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-buttons">
+            <a href="products.html" class="btn btn-primary">
+              <i class="fa-solid fa-bolt"></i>
+              Shop Now
+            </a>
+            <a href="products.html" class="btn btn-outline">
+              Explore Products
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-number">500+</span>
+              <span class="hero-stat-label">Products</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <span class="hero-stat-number">2K+</span>
+              <span class="hero-stat-label">Customers</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <span class="hero-stat-number">47</span>
+              <span class="hero-stat-label">Counties</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="hero-image-wrapper">
+          <div class="hero-image-container">
+            <img
+              src="images/hero-laptop2.png"
+              alt="Premium laptop"
+              class="hero-image"
+              id="heroImage"
+            />
+            <!-- Floating badges -->
+            <div class="hero-badge hero-badge-1">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>1 Year Warranty</span>
+            </div>
+            <div class="hero-badge hero-badge-2">
+              <i class="fa-solid fa-truck-fast"></i>
+              <span>Free Delivery</span>
+            </div>
+            <div class="hero-badge hero-badge-3">
+              <i class="fa-solid fa-star"></i>
+              <span>Top Rated</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero-scroll">
+        <span>Scroll down</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="featured-products" id="featured-products">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="section-tag-dot"></span>
+            Our Collection
+          </div>
+          <h2 class="section-title">
+            Featured <span class="section-title-highlight">Products</span>
+          </h2>
+          <p class="section-subtitle">
+            Handpicked premium laptops and accessories for every need and budget
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="laptops">Laptops</button>
+          <button class="filter-tab" data-filter="accessories">
+            Accessories
+          </button>
+          <button class="filter-tab" data-filter="gaming">Gaming</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+          <!-- ===== LAPTOPS (4 cards) ===== -->
+
+          <!-- Laptop 1 -->
+          <div class="product-card" data-category="laptops">
+            <div class="product-image-wrapper">
+              <span class="product-badge product-badge-sale">-15%</span>
+              <img
+                src="images/product1.jpg"
+                alt="MacBook Pro M3"
+                class="product-image"
+              />
+              <div class="product-overlay">
+                <button class="product-quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Laptop</span>
+              <h3 class="product-name">MacBook Pro M3</h3>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span class="product-rating-count">(128)</span>
+              </div>
+              <div class="product-price-row">
+                <div class="product-prices">
+                  <span class="product-price">Ksh 185,000</span>
+                  <span class="product-price-old">Ksh 218,000</span>
+                </div>
+                <button class="product-cart-btn" aria-label="Add to cart">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Laptop 2 -->
+          <div class="product-card" data-category="laptops">
+            <div class="product-image-wrapper">
+              <span class="product-badge product-badge-new">New</span>
+              <img
+                src="images/product2.jpg"
+                alt="Dell XPS 15"
+                class="product-image"
+              />
+              <div class="product-overlay">
+                <button class="product-quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Laptop</span>
+              <h3 class="product-name">Dell XPS 15</h3>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="product-rating-count">(94)</span>
+              </div>
+              <div class="product-price-row">
+                <div class="product-prices">
+                  <span class="product-price">Ksh 210,000</span>
+                </div>
+                <button class="product-cart-btn" aria-label="Add to cart">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Laptop 3 -->
+          <div class="product-card" data-category="laptops">
+            <div class="product-image-wrapper">
+              <span class="product-badge product-badge-hot">Hot</span>
+              <img
+                src="images/product5.jpg"
+                alt="HP Spectre x360"
+                class="product-image"
+              />
+              <div class="product-overlay">
+                <button class="product-quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Laptop</span>
+              <h3 class="product-name">HP Spectre x360</h3>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="product-rating-count">(76)</span>
+              </div>
+              <div class="product-price-row">
+                <div class="product-prices">
+                  <span class="product-price">Ksh 178,000</span>
+                </div>
+                <button class="product-cart-btn" aria-label="Add to cart">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Laptop 4 -->
+          <div class="product-card" data-category="laptops">
+            <div class="product-image-wrapper">
+              <span class="product-badge product-badge-sale">-10%</span>
+              <img
+                src="images/Lenovo thinkpad.avif"
+                alt="Lenovo ThinkPad X1"
+                class="product-image"
+              />
+              <div class="product-overlay">
+                <button class="product-quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Laptop</span>
+              <h3 class="product-name">Lenovo ThinkPad X1</h3>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span class="product-rating-count">(143)</span>
+              </div>
+              <div class="product-price-row">
+                <div class="product-prices">
+                  <span class="product-price">Ksh 195,000</span>
+                  <span class="product-price-old">Ksh 217,000</span>
+                </div>
+                <button class="product-cart-btn" aria-label="Add to cart">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== ACCESSORIES (4 cards) ===== -->
+
+          <!-- Accessory 1 -->
+          <div class="product-card" data-category="accessories">
+            <div class="product-image-wrapper">
+              <span class="product-badge product-badge-sale">-20%</span>
+              <img
+                src="images/product3.jpg"
+                alt="Logitech MX Master 3"
+                class="product-image"
+              />
+              <div class="product-overlay">
+                <button class="product-quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Accessory</span>
+              <h3 class="product-name">Logitech MX Master 3</h3>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="product-rating-count">(256)</span>
+              </div>
+              <div class="product-price-row">
+                <div class="product-prices">
+                  <span class="product-price">Ksh 12,000</span>
+                  <span class="product-price-old">Ksh 15,000</span>
+                </div>
+                <button class="product-cart-btn" aria-label="Add to cart">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accessory 2 -->
+          <div class="product-card" data-category="accessories">
+            <div class="product-image-wrapper">
+              <span class="product-badge product-badge-new">New</span>
+              <img
+                src="images/product7.jpg"
+                alt="Samsung 27 Monitor"
+                class="product-image"
+              />
+              <div class="product-overlay">
+                <button class="product-quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Accessory</span>
+              <h3 class="product-name">Samsung 27" Monitor</h3>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="product-rating-count">(312)</span>
+              </div>
+              <div class="product-price-row">
+                <div class="product-prices">
+                  <span class="product-price">Ksh 38,000</span>
+                </div>
+                <button class="product-cart-btn" aria-label="Add to cart">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accessory 3 -->
+          <div class="product-card" data-category="accessories">
+            <div class="product-image-wrapper">
+              <span class="product-badge product-badge-sale">-12%</span>
+              <img
+                src="images/product9.jpg"
+                alt="Sony WH-1000XM5"
+                class="product-image"
+              />
+              <div class="product-overlay">
+                <button class="product-quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Accessory</span>
+              <h3 class="product-name">Sony WH-1000XM5</h3>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span class="product-rating-count">(445)</span>
+              </div>
+              <div class="product-price-row">
+                <div class="product-prices">
+                  <span class="product-price">Ksh 28,000</span>
+                  <span class="product-price-old">Ksh 32,000</span>
+                </div>
+                <button class="product-cart-btn" aria-label="Add to cart">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accessory 4 -->
+          <div class="product-card" data-category="accessories">
+            <div class="product-image-wrapper">
+              <span class="product-badge product-badge-hot">Hot</span>
+              <img
+                src="images/product10.jpg"
+                alt="Keychron K2 Keyboard"
+                class="product-image"
+              />
+              <div class="product-overlay">
+                <button class="product-quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Accessory</span>
+              <h3 class="product-name">Keychron K2 Keyboard</h3>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="product-rating-count">(189)</span>
+              </div>
+              <div class="product-price-row">
+                <div class="product-prices">
+                  <span class="product-price">Ksh 9,500</span>
+                </div>
+                <button class="product-cart-btn" aria-label="Add to cart">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== GAMING (4 cards) ===== -->
+
+          <!-- Gaming 1 -->
+          <div class="product-card" data-category="gaming">
+            <div class="product-image-wrapper">
+              <span class="product-badge product-badge-hot">Hot</span>
+              <img
+                src="images/product4.jpg"
+                alt="ASUS ROG Zephyrus"
+                class="product-image"
+              />
+              <div class="product-overlay">
+                <button class="product-quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Gaming</span>
+              <h3 class="product-name">ASUS ROG Zephyrus</h3>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span class="product-rating-count">(187)</span>
+              </div>
+              <div class="product-price-row">
+                <div class="product-prices">
+                  <span class="product-price">Ksh 245,000</span>
+                </div>
+                <button class="product-cart-btn" aria-label="Add to cart">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gaming 2 -->
+          <div class="product-card" data-category="gaming">
+            <div class="product-image-wrapper">
+              <span class="product-badge product-badge-sale">-25%</span>
+              <img
+                src="images/product8.jpg"
+                alt="Razer BlackWidow V4"
+                class="product-image"
+              />
+              <div class="product-overlay">
+                <button class="product-quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Gaming</span>
+              <h3 class="product-name">Razer BlackWidow V4</h3>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="product-rating-count">(201)</span>
+              </div>
+              <div class="product-price-row">
+                <div class="product-prices">
+                  <span class="product-price">Ksh 18,000</span>
+                  <span class="product-price-old">Ksh 24,000</span>
+                </div>
+                <button class="product-cart-btn" aria-label="Add to cart">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gaming 3 -->
+          <div class="product-card" data-category="gaming">
+            <div class="product-image-wrapper">
+              <span class="product-badge product-badge-new">New</span>
+              <img
+                src="images/product11.jpg"
+                alt="Logitech G Pro X"
+                class="product-image"
+              />
+              <div class="product-overlay">
+                <button class="product-quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Gaming</span>
+              <h3 class="product-name">Logitech G Pro X</h3>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span class="product-rating-count">(334)</span>
+              </div>
+              <div class="product-price-row">
+                <div class="product-prices">
+                  <span class="product-price">Ksh 14,500</span>
+                </div>
+                <button class="product-cart-btn" aria-label="Add to cart">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gaming 4 -->
+          <div class="product-card" data-category="gaming">
+            <div class="product-image-wrapper">
+              <span class="product-badge product-badge-sale">-18%</span>
+              <img
+                src="images/product12.jpg"
+                alt="SteelSeries Arctis 7"
+                class="product-image"
+              />
+              <div class="product-overlay">
+                <button class="product-quick-view">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Gaming</span>
+              <h3 class="product-name">SteelSeries Arctis 7</h3>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="product-rating-count">(278)</span>
+              </div>
+              <div class="product-price-row">
+                <div class="product-prices">
+                  <span class="product-price">Ksh 16,500</span>
+                  <span class="product-price-old">Ksh 20,000</span>
+                </div>
+                <button class="product-cart-btn" aria-label="Add to cart">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- View All Button -->
+        <div class="section-footer">
+          <a href="products.html" class="btn btn-outline-dark">
+            View All Products
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES SECTION -->
+    <section class="categories" id="categories">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag categories-tag">
+            <span class="section-tag-dot"></span>
+            Shop By Category
+          </div>
+          <h2 class="section-title categories-title">
+            Browse Our <span class="section-title-highlight">Categories</span>
+          </h2>
+          <p class="section-subtitle categories-subtitle">
+            Find exactly what you need from our wide range of products
+          </p>
+        </div>
+
+        <!-- Categories Grid -->
+        <div class="categories-grid">
+          <!-- Big Card — Laptops -->
+          <div class="category-card category-card-big cat-laptops">
+            <div class="category-overlay"></div>
+            <div class="category-content">
+              <div class="category-icon">
+                <i class="fa-solid fa-laptop"></i>
+              </div>
+              <h3 class="category-name">Laptops</h3>
+              <p class="category-count">120+ Products</p>
+              <a href="products.html" class="category-btn">
+                Shop Now <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Small Cards -->
+          <div class="categories-small-grid">
+            <div class="category-card category-card-small cat-keyboards">
+              <div class="category-overlay"></div>
+              <div class="category-content">
+                <div class="category-icon">
+                  <i class="fa-solid fa-keyboard"></i>
+                </div>
+                <h3 class="category-name">Keyboards</h3>
+                <p class="category-count">45+ Products</p>
+              </div>
+            </div>
+
+            <div class="category-card category-card-small cat-mice">
+              <div class="category-overlay"></div>
+              <div class="category-content">
+                <div class="category-icon">
+                  <i class="fa-solid fa-computer-mouse"></i>
+                </div>
+                <h3 class="category-name">Mice</h3>
+                <p class="category-count">38+ Products</p>
+              </div>
+            </div>
+
+            <div class="category-card category-card-small cat-monitors">
+              <div class="category-overlay"></div>
+              <div class="category-content">
+                <div class="category-icon">
+                  <i class="fa-solid fa-desktop"></i>
+                </div>
+                <h3 class="category-name">Monitors</h3>
+                <p class="category-count">30+ Products</p>
+              </div>
+            </div>
+
+            <div class="category-card category-card-small cat-headphones">
+              <div class="category-overlay"></div>
+              <div class="category-content">
+                <div class="category-icon">
+                  <i class="fa-solid fa-headphones"></i>
+                </div>
+                <h3 class="category-name">Headphones</h3>
+                <p class="category-count">52+ Products</p>
+              </div>
+            </div>
+
+            <div class="category-card category-card-small cat-gaming">
+              <div class="category-overlay"></div>
+              <div class="category-content">
+                <div class="category-icon">
+                  <i class="fa-solid fa-gamepad"></i>
+                </div>
+                <h3 class="category-name">Gaming Gear</h3>
+                <p class="category-count">67+ Products</p>
+              </div>
+            </div>
+
+            <div class="category-card category-card-small cat-bags">
+              <div class="category-overlay"></div>
+              <div class="category-content">
+                <div class="category-icon">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <h3 class="category-name">Bags & Cases</h3>
+                <p class="category-count">28+ Products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <section class="video-section" id="video-section">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="section-tag-dot"></span>
+            See It In Action
+          </div>
+          <h2 class="section-title">
+            Watch Our <span class="section-title-highlight">Products</span> In
+            Action
+          </h2>
+          <p class="section-subtitle">
+            See the quality and performance of our premium laptops and
+            accessories
+          </p>
+        </div>
+
+        <!-- Video Wrapper -->
+        <div class="video-wrapper">
+          <!-- Thumbnail & Play Button -->
+          <div class="video-container" id="videoContainer">
+            <!-- Video Thumbnail -->
+            <img
+              src="images/video-thumbnail.png"
+              alt="Product showcase video"
+              class="video-thumbnail"
+              id="videoThumbnail"
+            />
+
+            <!-- Play Button Overlay -->
+            <div class="video-play-overlay" id="videoPlayOverlay">
+              <button
+                class="video-play-btn"
+                id="videoPlayBtn"
+                aria-label="Play video"
+              >
+                <i class="fa-solid fa-play"></i>
+              </button>
+              <p class="video-play-text">Watch Product Showcase</p>
+            </div>
+
+            <!-- Actual Video (hidden until play clicked) -->
+            <video
+              class="video-player"
+              id="videoPlayer"
+              controls
+              preload="none"
+            >
+              <source src="videos/showcase.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- Video Stats Row -->
+          <div class="video-stats">
+            <div class="video-stat">
+              <i class="fa-solid fa-laptop"></i>
+              <span>500+ Products</span>
+            </div>
+            <div class="video-stat-divider"></div>
+            <div class="video-stat">
+              <i class="fa-solid fa-star"></i>
+              <span>Top Rated Brands</span>
+            </div>
+            <div class="video-stat-divider"></div>
+            <div class="video-stat">
+              <i class="fa-solid fa-truck-fast"></i>
+              <span>Countrywide Delivery</span>
+            </div>
+            <div class="video-stat-divider"></div>
+            <div class="video-stat">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>1 Year Warranty</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-us" id="why-us">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-tag why-us-tag">
+            <span class="section-tag-dot"></span>
+            Why Choose Us
+          </div>
+          <h2 class="section-title why-us-title">
+            Why Shop With
+            <span class="section-title-highlight">GoldenGen?</span>
+          </h2>
+          <p class="section-subtitle why-us-subtitle">
+            We are committed to giving you the best shopping experience every
+            time
+          </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="why-us-grid">
+          <!-- Card 1 — Quality Products -->
+          <div class="why-us-card">
+            <div class="why-us-icon-wrapper">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+            <h3 class="why-us-title-card">Quality Products</h3>
+            <p class="why-us-desc">
+              Every product we sell is carefully vetted for quality and
+              performance. Only the best brands make it to our shelves.
+            </p>
+          </div>
+
+          <!-- Card 2 — Fast Delivery -->
+          <div class="why-us-card">
+            <div class="why-us-icon-wrapper">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <h3 class="why-us-title-card">Fast Countrywide Delivery</h3>
+            <p class="why-us-desc">
+              We deliver to all 47 counties across Kenya. Fast, reliable and
+              affordable delivery right to your doorstep.
+            </p>
+          </div>
+
+          <!-- Card 3 — Warranty -->
+          <div class="why-us-card">
+            <div class="why-us-icon-wrapper">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="why-us-title-card">1 Year Warranty</h3>
+            <p class="why-us-desc">
+              All laptops come with a full 1 year warranty. Shop with confidence
+              knowing your investment is fully protected.
+            </p>
+          </div>
+
+          <!-- Card 4 — Best Prices -->
+          <div class="why-us-card">
+            <div class="why-us-icon-wrapper">
+              <i class="fa-solid fa-tag"></i>
+            </div>
+            <h3 class="why-us-title-card">Best Prices</h3>
+            <p class="why-us-desc">
+              We offer the most competitive prices in Kenya. Get premium
+              products without breaking the bank.
+            </p>
+          </div>
+
+          <!-- Card 5 — 24/7 Support -->
+          <div class="why-us-card">
+            <div class="why-us-icon-wrapper">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3 class="why-us-title-card">24/7 Customer Support</h3>
+            <p class="why-us-desc">
+              Our support team is always available via WhatsApp, email or phone.
+              We are here whenever you need us.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK LINKS -->
+    <section class="quick-links" id="quick-links">
+      <div class="section-container">
+        <div class="quick-links-grid">
+          <!-- Brand Column -->
+          <div class="quick-links-brand">
+            <a href="index.html" class="nav-brand quick-links-logo">
+              <div class="logo-icon">
+                <div class="logo-diamond">
+                  <span class="logo-letters">GG</span>
+                </div>
+              </div>
+              <div class="logo-text">
+                <span class="logo-name">
+                  <span class="logo-golden">Golden</span>Gen
+                </span>
+                <span class="logo-tagline">Technologies</span>
+              </div>
+            </a>
+            <p class="quick-links-brand-desc">
+              Your trusted source for premium laptops and computer accessories
+              in Kenya. Quality products, best prices, delivered countrywide.
+            </p>
+            <div class="quick-links-social">
+              <a href="#" class="social-icon" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="Twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links Column -->
+          <div class="quick-links-col">
+            <h4 class="quick-links-heading">Quick Links</h4>
+            <ul class="quick-links-list">
+              <li>
+                <a href="index.html" class="quick-link-item">
+                  <i class="fa-solid fa-chevron-right"></i> Home
+                </a>
+              </li>
+              <li>
+                <a href="products.html" class="quick-link-item">
+                  <i class="fa-solid fa-chevron-right"></i> Products
+                </a>
+              </li>
+              <li>
+                <a href="about.html" class="quick-link-item">
+                  <i class="fa-solid fa-chevron-right"></i> About Us
+                </a>
+              </li>
+              <li>
+                <a href="contact.html" class="quick-link-item">
+                  <i class="fa-solid fa-chevron-right"></i> Contact
+                </a>
+              </li>
+              <li>
+                <a href="#" class="quick-link-item">
+                  <i class="fa-solid fa-chevron-right"></i> Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Categories Column -->
+          <div class="quick-links-col">
+            <h4 class="quick-links-heading">Categories</h4>
+            <ul class="quick-links-list">
+              <li>
+                <a href="products.html" class="quick-link-item">
+                  <i class="fa-solid fa-chevron-right"></i> Laptops
+                </a>
+              </li>
+              <li>
+                <a href="products.html" class="quick-link-item">
+                  <i class="fa-solid fa-chevron-right"></i> Keyboards
+                </a>
+              </li>
+              <li>
+                <a href="products.html" class="quick-link-item">
+                  <i class="fa-solid fa-chevron-right"></i> Mice
+                </a>
+              </li>
+              <li>
+                <a href="products.html" class="quick-link-item">
+                  <i class="fa-solid fa-chevron-right"></i> Monitors
+                </a>
+              </li>
+              <li>
+                <a href="products.html" class="quick-link-item">
+                  <i class="fa-solid fa-chevron-right"></i> Gaming Gear
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Column -->
+          <div class="quick-links-col">
+            <h4 class="quick-links-heading">Contact Us</h4>
+            <ul class="quick-links-list">
+              <li class="quick-link-contact">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Nairobi, Kenya</span>
+              </li>
+              <li class="quick-link-contact">
+                <i class="fa-solid fa-phone"></i>
+                <span>0795 044 498</span>
+              </li>
+              <li class="quick-link-contact">
+                <i class="fa-solid fa-envelope"></i>
+                <span>sales@GoldenGen.co.ke</span>
+              </li>
+              <li class="quick-link-contact">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>0795 044 498</span>
+              </li>
+              <li class="quick-link-contact">
+                <i class="fa-regular fa-clock"></i>
+                <span>Mon — Sat: 8am — 8pm</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+      <div class="footer-container">
+        <!-- Left — Copyright -->
+        <div class="footer-left">
+          <p class="footer-copy">
+            &copy; 2025
+            <span class="footer-brand-name">GoldenGen Technologies</span>. All
+            rights reserved.
+          </p>
+          <p class="footer-made">
+            Made with <i class="fa-solid fa-heart footer-heart"></i> in Kenya
+            <img
+              src="https://flagcdn.com/16x12/ke.png"
+              alt="Kenya flag"
+              style="
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 4px;
+              "
+            />
+          </p>
+        </div>
+
+        <!-- Center — Links -->
+        <div class="footer-center">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <span class="footer-divider">|</span>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <span class="footer-divider">|</span>
+          <a href="#" class="footer-link">Sitemap</a>
+        </div>
+
+        <!-- Right — Back to top -->
+        <div class="footer-right">
+          <a href="#hero" class="footer-top-btn" id="backToTop">
+            Back to top <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop preload="none">
+      <source src="videos/background.mp3" type="audio/mpeg" />
+    </audio>
 
     <script src="js/main.js"></script>
   </body>
